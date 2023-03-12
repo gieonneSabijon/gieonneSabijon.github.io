@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
+
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(110, 110, 110);
+    font-size: 16px;
+}
+
+
+
+a, p, h1{
+    font-family: "Inter", sans-serif;
+    font-weight: 300;
+    color: white;
+    text-decoration: none; 
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 2%;
+    background-color: rgb(76, 75, 92);
+}
+
+<!-- TODO: set up nav drop down on hover -->
+
+
+
+
