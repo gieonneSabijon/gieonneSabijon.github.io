@@ -17,14 +17,46 @@ a, p, h1{
     text-decoration: none; 
 }
 
-header {
+header {  
     display: flex;
     justify-content: space-between;
-    padding: 10px 2%;
+    padding: 0px 2%;
     background-color: rgb(76, 75, 92);
+    background-attachment: fixed;
 }
 
-<!-- TODO: set up nav drop down on hover -->
+
+/* TODO: set up nav drop down on hover --> */
+
+#navHeader {
+    padding-bottom: 2%;
+    border-radius: 5px;
+    margin: 0px;
+}
+
+#navLinks {
+    list-style: none;
+    display: none;
+}
+
+#navHeader:hover + nav #navLinks, #navLinks:hover{
+    background-color: rgb(76, 75, 92);
+    display: block;
+    margin: 0px;
+    position: absolute;
+}
+
+#navLinks {
+    padding: 0% ;
+}
+
+#navLinks li {
+    padding: 10% 75px;
+}
+
+#navLinks li:hover {
+    background-color: rgba(35, 26, 36, 0.623);;
+}
 
 
 
