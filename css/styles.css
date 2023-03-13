@@ -70,10 +70,6 @@ header {
     margin: 0px 10%; 
 }
 
-#resumeEmbed, #resumeDownload{
-    text-align: center;
-}
-
 .ending {
     display: flex;
     margin-left: 2%; 
