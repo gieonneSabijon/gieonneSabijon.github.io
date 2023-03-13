@@ -26,7 +26,7 @@ header {
 }
 
 #topnav {
-    padding-left: 45%;
+    padding-left: 55%;
 }
 
 #navHeader {    
@@ -62,7 +62,22 @@ header {
 #content {
     display: flex;
     flex-direction: column;
-    margin: 100px 2%; 
+    margin: 100px 10%; 
+    margin-bottom: 0px;
+}
+
+.contentBody {
+    margin: 0px 10%; 
+}
+
+#resumeEmbed, #resumeDownload{
+    text-align: center;
+}
+
+.ending {
+    display: flex;
+    margin-left: 2%; 
+    margin-bottom:  100px ;
 }
 
 footer {
