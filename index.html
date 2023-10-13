@@ -1,137 +1,107 @@
 <!DOCTYPE html>
 
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="Styles/main.css">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-        <script src="Scripts/main.js" async defer></script>
-        <style>
-            .material-symbols-outlined {
-                font-variation-settings:
-                'FILL' 0,
-                'wght' 400,
-                'GRAD' 0,
-                'opsz' 48
-            }
-        </style>
-    </head>
-    <body onload="onLoad()">
-        <div class="background_container">
-            
-        </div>
-        <div class="body_container vert_flex">
-            <div class="header_container vert_flex">
-                <div class="header_content_container hor_flex">
-                    <h1>Gieonne Sabijon</h1>
-                    <div class="header_nav hor_flex">
-                        <a href="#top">Top of Page</a>
-                        <a href="#aboutme">About Me</a>
-                        <a href="#projects">Projects</a>
-                        <a href="#languages">Languages</a>
-                    </div>
-                </div>
-                <div class="header_line">
+<html lang="en">
 
-                </div>
-            </div>
-            
-            <div class="content_container">
-                <div id="top"></div>
-                <div id="aboutme" class="aboutme_container section_container">
-                    <h3>About Me</h3>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse condimentum ut dolor vitae tristique. Nulla scelerisque enim in vulputate eleifend. Vivamus non lacinia neque. Nulla quis mattis augue. Integer in leo leo. Donec ullamcorper risus lobortis, vestibulum lectus in, tincidunt risus. Ut sagittis, libero iaculis posuere aliquet, sem nisi luctus diam, sollicitudin viverra purus mi at augue. Sed maximus tempor sapien eget malesuada. Proin commodo commodo dui quis aliquam. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. In tincidunt mollis dolor. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In commodo odio et nisl blandit tristique. Sed sit amet turpis sapien. Sed mattis id erat sit amet convallis. Donec faucibus sapien libero, vel efficitur magna lacinia at. 
-                    </p>
-                </div>
-                <div id="projects" class="projects_container section_container vert_flex">
-                    <div class="projects_content_container">
-                        <div class="projects_header hor_flex">
-                            <h3>Projects</h3>
-                        </div>
-                        <div class="projects_list">
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse condimentum ut dolor vitae tristique. Nulla scelerisque enim in vulputate eleifend. Vivamus non lacinia neque. Nulla quis mattis augue. Integer in leo leo. Donec ullamcorper risus lobortis, vestibulum lectus in, tincidunt risus. Ut sagittis, libero iaculis posuere aliquet, sem nisi luctus diam, sollicitudin viverra purus mi at augue. Sed maximus tempor sapien eget malesuada. Proin commodo commodo dui quis aliquam. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. In tincidunt mollis dolor. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In commodo odio et nisl blandit tristique. Sed sit amet turpis sapien. Sed mattis id erat sit amet convallis. Donec faucibus sapien libero, vel efficitur magna lacinia at. 
-                            </p>
-                        </div>
-                    </div>
-                    <div class="project_arrow_container  hor_flex">
-                        <div class="previous_container">
-                            <span class="material-symbols-outlined">
-                            navigate_before
-                            </span>
-                        </div>
-                        <div class="next_container">
-                            <span class="material-symbols-outlined">
-                            navigate_next
-                            </span>
-                        </div>
-                    </div>
-                </div>
+<head>
 
-                <div id="languages" class="languages_container section_container vert_flex">
-                    <div class="hor_flex">
-                        <h3>Languages</h3>
-                    </div>
-                    <div class="hor_flex">
-                        <div class="language_wrapper">
-                            <h4>Python</h4>
-                            <div class="language_info vert_flex">
-                                <p>Numpy</p>
-                                <p>Matplotlib</p>
-                                <p>Pygame</p>
-                                <p>Beautiful Soup</p>
-                            </div>
-                        </div>
-                        <div class="language_wrapper">
-                            <h4>Java</h4>
-                            <div class="language_info vert_flex">
-                                <p>test</p>
-                            </div>
-                        </div>
-                        <div class="language_wrapper">
-                            <h4>Javascript</h4>
-                            <div class="language_info vert_flex">
-                                <p>test</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="hor_flex">
-                        <div class="language_wrapper">
-                            <h4>C++</h4>
-                            <div class="language_info vert_flex">
-                                <p>test</p>
-                            </div>
-                        </div>
-                        <div class="language_wrapper">
-                            <h4>HTML</h4>
-                            <div class="language_info vert_flex">
-                                <p>test</p>
-                            </div>
-                        </div>
-                        <div class="language_wrapper">
-                            <h4>CSS</h4>
-                            <div class="language_info vert_flex">
-                                <p>test</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+    <meta charset="UTF-8" />
+
+    <title>Gieonne Sabijon</title>
+
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+
+    <meta name="description" content="" />
+
+    <link rel="stylesheet" type="text/css" href="Styles/main.css" />
+
+    <link rel="icon" href="favicon.png">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+</head>
+
+<body onload="onLoad()">
+    <script src="Scripts/main.js"></script>
+    <div class="powerButtonContainer">
+        <button class="powerButton" onclick="toggleSite()" ><span class="material-symbols-outlined powerIcon">
+            power_settings_new
+            </span></button>
+    </div>
+
+    <div class="pageContainer">
+        
+
+        <div class="header pageSection">
+            <nav class="nav" id="nav">
+
+                <a href="#pageTop">Gieonne Sabijon</a>
+            </nav>
+            <nav class="nav rightNav" id="nav">
+                <button class="collapseToggle" onclick="toggleCollapse()"><span class="material-symbols-outlined expandIcon">
+                    navigate_before
+                    </span>
+                    <span class="material-symbols-outlined collapseIcon">
+                        navigate_next
+                    </span>
+                </button>
+                <nav class="nav collapsed linkList">
+                    <a href="#aboutMe">About Me</a>
+        
+                    <a href="#projects">Projects</a>
+        
+                    <a href="#Socials">Socials</a>
+                </nav>
+            </nav>
                 
-            </div>
-            <div class="footer_container">
-                <div class="socials_nav hor_flex">
-                    <a href="https://www.linkedin.com/in/gieonne-sabijon-b31411223/">LinkedIn</a>
-                    <a href="https://github.com/gieonneSabijon">Github</a>
-                    <a href="mailto:gieonnesabijon@gmail.com">Email</a>
-                </div>
-            </div>
+            
         </div>
         
-        
-    </body>
+
+        <div class="mainContent pageSection">
+            <div class="pageTop" id="pageTop"></div>
+
+
+            <div class="aboutMe contentSection" id="aboutMe">
+                <h1 class="aboutMeTitle">About Me</h1>
+                <p class="aboutMeParagraph">My name is Gieonne Sabijon, I'm currently a university student studying Computer Science at Ontario Tech University.
+                    I have experience in multiple different languages and libraries, and have a portfolio of my own personal projects. 
+                </p>
+
+            </div>
+
+
+            <div class="projects contentSection" id="projects">
+                <p>Projects</p>
+            </div>
+
+            <div class="Socials contentSection" id="Socials">
+                <div class="socialsTitle">
+                    <h1>Socials</h1>
+                </div>
+                <div class="socialList">
+                    <a class="linkedinLink socialButton" href="https://www.linkedin.com/in/gieonne-sabijon-b31411223/"><span class="material-symbols-outlined socialIcon">
+                        work
+                        </span>
+                    <p class="linkedinTitle linktitle">LinkedIn</p></a>
+
+                        <a class="githubLink socialButton" href="https://github.com/gieonneSabijon"><span class="material-symbols-outlined socialIcon">
+                            code
+                            </span><p class="githubTitle linktitle">Github</p></a>
+
+                        <a class="emailLink socialButton" href="mailto:gieonnesabijon@gmail.com"><span class="material-symbols-outlined socialIcon">
+                            mail
+                            </span><p class="emailTitle linktitle">Email</p></a>
+
+                        <a class="resumeLink socialButton"><span class="material-symbols-outlined socialIcon">
+                            description
+                            </span><p class="resumeTitle linktitle">Resume</p></a>
+                </div>
+
+            
+            </div>
+        </div>
+            
+    </div>
+</body>
+
 </html>
