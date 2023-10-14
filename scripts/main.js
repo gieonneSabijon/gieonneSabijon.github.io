@@ -100,3 +100,5 @@ function stringToRandomChars(inputString, length) {
     }
     return result;
 }
+
+console.log("TEST");
