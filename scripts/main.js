@@ -6,6 +6,45 @@ function onLoad(){
     observer.observe(targetDiv);
 }
 
+function projectCycle(direction) {
+    const carousel = document.querySelector('.carousel');
+    const projectWrappers = Array.from(carousel.querySelectorAll('.projectWrapper'));
+
+    if (direction === 'right') {
+        // Rotate the elements to the left.
+        const firstElement = projectWrappers.shift();
+        projectWrappers.push(firstElement);
+    } else if (direction === 'left') {
+        // Rotate the elements to the right.
+        const lastElement = projectWrappers.pop();
+        projectWrappers.unshift(lastElement);
+    }
+
+    // Clear and reassign classes.
+    projectWrappers.forEach((element, index) => {
+        element.classList.remove('leftProject', 'focusedProject', 'rightProject', 'hiddenProject');
+        if (index === 0) {
+        element.classList.add('leftProject');
+        } else if (index === 1) {
+        element.classList.add('focusedProject');
+        } else if (index === 2) {
+        element.classList.add('rightProject');
+        } else {
+        element.classList.add('hiddenProject');
+        }
+    });
+
+    // Reposition elements within the "carousel" container.
+    while (carousel.firstChild) {
+        carousel.removeChild(carousel.firstChild);
+    }
+    projectWrappers.forEach((element) => {
+        carousel.appendChild(element);
+    });
+
+}
+
+
 
 const observer = new IntersectionObserver(entries => {
     entries.forEach(entry => {
@@ -100,5 +139,3 @@ function stringToRandomChars(inputString, length) {
     }
     return result;
 }
-
-console.log("TEST");
