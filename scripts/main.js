@@ -4,6 +4,7 @@ function onLoad(){
     
     const targetDiv = document.querySelector('.Socials');
     observer.observe(targetDiv);
+
 }
 
 function projectCycle(direction) {
@@ -53,7 +54,9 @@ const observer = new IntersectionObserver(entries => {
             // You can trigger an event or execute a function here.
             const targetDiv = document.querySelector('.Socials');
             const titleDiv = document.querySelector('.socialsTitle');
+            const secondTitle = document.querySelector('.socialsTitle2');
             titleDiv.style.animation = "slideRight 1s forwards";
+            secondTitle.style.animation = "slideLeft 1s forwards";
             observer.unobserve(targetDiv);
         }
     });
@@ -116,7 +119,7 @@ function decryptText(originalText, element, index) {
         index++;
         setTimeout(function () {
             decryptText(originalText, element, index);
-        }, 10); // Delay decryption for 100 milliseconds (adjust as needed)
+        }, 5); // Delay decryption for 100 milliseconds (adjust as needed)
     }
 }
 
