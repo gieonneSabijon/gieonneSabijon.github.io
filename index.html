@@ -1,192 +1,234 @@
 <!DOCTYPE html>
-
 <html lang="en">
 
 <head>
-
     <meta charset="UTF-8" />
-
-    <title>Gieonne Sabijon</title>
-
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
-
-    <meta name="description" content="" />
+    <title>Gieonne Sabijon | Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+        content="Personal portfolio of Gieonne Sabijon, Computer Science student at Ontario Tech University." />
 
     <link rel="stylesheet" type="text/css" href="Styles/main.css" />
-
-    <link rel="icon" href="favicon.png">
-
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <script type="text/javascript" src="scripts/main.js"></script>
-    
-
-
+    <link rel="icon" href="favicon.png" type="image/png">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <script type="text/javascript" src="scripts/main.js" defer></script>
 </head>
 
 <body onload="onLoad()">
-    
     <div class="powerButtonContainer">
-        <button class="powerButton" onclick="toggleSite()" ><span class="material-symbols-outlined powerIcon">
-            power_settings_new
-            </span></button>
+        <div class="terminal-box">
+            <div class="terminal-header">
+                <span class="dot red"></span>
+                <span class="dot yellow"></span>
+                <span class="dot green"></span>
+            </div>
+
+            <button class="powerButton" onclick="bootSystem()" aria-label="Power On System">
+                <span class="material-symbols-outlined powerIcon">
+                    power_settings_new
+                </span>
+            </button>
+
+            <div class="boot-logs">
+            </div>
+        </div>
     </div>
 
     <div class="pageContainer">
-        <div class="header pageSection">
-            <nav class="nav" id="nav">
 
-                <a href="#pageTop">Gieonne Sabijon</a>
+        <header class="header pageSection">
+            <nav class="nav">
+                <a href="#aboutMe" class="brand-logo">Gieonne<span>.Sabijon()</span></a>
             </nav>
-            <nav class="nav rightNav" id="nav">
-                <button class="collapseToggle" onclick="toggleCollapse()"><span class="material-symbols-outlined expandIcon">
-                    navigate_before
-                    </span>
-                    <span class="material-symbols-outlined collapseIcon">
-                        navigate_next
-                    </span>
+            <div class="rightNav">
+                <button class="collapseToggle" aria-label="Toggle Navigation">
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
                 </button>
-                <nav class="nav collapsed linkList">
+                <nav class="linkList">
                     <a href="#aboutMe">About Me</a>
-        
                     <a href="#projects">Projects</a>
-        
                     <a href="#Socials">Socials</a>
                 </nav>
-            </nav>
-                
-            
-        </div>
-        
-
-        <div class="mainContent pageSection">
-            <div class="pageTop" id="pageTop"></div>
-
-
-            <div class="aboutMe contentSection" id="aboutMe">
-                <h1 class="aboutMeTitle">About Me</h1>
-                <p class="aboutMeParagraph">My name is Gieonne Sabijon, I'm currently a university student studying Computer Science at Ontario Tech University.
-                    I have experience in multiple different languages and libraries, and have a portfolio of my own personal projects. 
-                </p>
-
             </div>
+        </header>
 
 
-            <div class="projects contentSection" id="projects">
+        <main class="mainContent">
+            <section class="aboutMe contentSection" id="aboutMe">
+                <h1 class="aboutMeTitle">About <span>Me</span></h1>
+                <p class="aboutMeParagraph">
+                    I'm Gieonne Sabijon, a Computer Science graduate from Ontario Tech University passionate about
+                    creating innovative digital experiences. My interests span full-stack web development, mobile
+                    applications, game development, data management, and software engineering. I enjoy
+                    transforming ideas into practical solutions that are intuitive, scalable, and impactful.
+                    This portfolio showcases my projects, technical skills, and experiences as I continue to grow as a
+                    developer and contribute to meaningful technology.
+                </p>
+            </section>
+
+
+            <section class="projects contentSection" id="projects">
                 <div class="projectsTitle">
-                    <h1>Projects</h1>
+                    <h1>My <span>Projects</span></h1>
                 </div>
-                
+
                 <div class="carouselWrapper">
                     <div class="prevWrapper">
-                        <button class="carouselButton prevButton" onclick="projectCycle('left')">
-                            <span class="material-symbols-outlined prevProject">
+                        <button class="carouselButton prevButton" onclick="moveCarousel(-1)"
+                            aria-label="Previous Project">
+                            <span class="material-symbols-outlined">
                                 navigate_before
-                                </span>
+                            </span>
                         </button>
                     </div>
+
                     <div class="carousel">
-                        <div class="projectWrapper leftProject">
-                            <img src="Assets/Images/temp.png">
+
+                        <div class="projectWrapper">
                             <div class="projectDetails">
                                 <div class="projTitle">
-                                    <h2>1</h2>
+                                    <h2>ClipSphere</h2>
                                 </div>
                                 <div class="projDesc">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent at ullamcorper dolor. Sed sed sapien eu mi consequat condimentum vitae ut justo. Nullam purus ipsum, sodales quis efficitur viverra, tempus quis ipsum. In varius, augue vitae consequat finibus, dui lacus euismod felis, eget sollicitudin elit turpis non nunc.</p>
+                                    <p>A Mobile Application where users can post short form content videos and interact
+                                        with other users</p>
                                 </div>
-                            </div>
-                        </div>
-    
-                        <div class="projectWrapper focusedProject">
-                            <img src="Assets/Images/temp.png">
-                            <div class="projectDetails">
-                                <div class="projTitle">
-                                    <h2>2</h2>
+                                <div class="projTags">
+                                    <span>Flutter</span>
+                                    <span>Firebase</span>
+                                    <span>Dart</span>
                                 </div>
-                                <div class="projDesc">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent at ullamcorper dolor. Sed sed sapien eu mi consequat condimentum vitae ut justo. Nullam purus ipsum, sodales quis efficitur viverra, tempus quis ipsum. In varius, augue vitae consequat finibus, dui lacus euismod felis, eget sollicitudin elit turpis non nunc.</p>
-                                </div>
-                            </div>
-                        </div>
-    
-                        <div class="projectWrapper rightProject">
-                            <img src="Assets/Images/temp.png">
-                            <div class="projectDetails">
-                                <div class="projTitle">
-                                    <h2>3</h2>
-                                </div>
-                                <div class="projDesc">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent at ullamcorper dolor. Sed sed sapien eu mi consequat condimentum vitae ut justo. Nullam purus ipsum, sodales quis efficitur viverra, tempus quis ipsum. In varius, augue vitae consequat finibus, dui lacus euismod felis, eget sollicitudin elit turpis non nunc.</p>
+                                <div class="projLinks">
+                                    <a href="https://github.com/gieonneSabijon" target="_blank" class="projLink">
+                                        <span class="material-symbols-outlined">code</span> Github
+                                    </a>
                                 </div>
                             </div>
                         </div>
 
-                        <div class="projectWrapper hiddenProject">
-                            <img src="Assets/Images/temp.png">
+                        <div class="projectWrapper">
                             <div class="projectDetails">
                                 <div class="projTitle">
-                                    <h2>4</h2>
+                                    <h2>Ontario Tech ICS Generator</h2>
                                 </div>
                                 <div class="projDesc">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent at ullamcorper dolor. Sed sed sapien eu mi consequat condimentum vitae ut justo. Nullam purus ipsum, sodales quis efficitur viverra, tempus quis ipsum. In varius, augue vitae consequat finibus, dui lacus euismod felis, eget sollicitudin elit turpis non nunc.</p>
+                                    <p>Converts a term schedule from Ontario Tech's mycampus website into a ICS file
+                                        that can be imported into Google Calendar or Apple Calendar</p>
+                                </div>
+                                <div class="projTags">
+                                    <span>Python</span>
+                                    <span>Webscraping</span>
+                                    <span>Rest API</span>
+                                </div>
+                                <div class="projLinks">
+                                    <a href="https://github.com/gieonneSabijon/Ontario-Tech-ICS-Generator"
+                                        target="_blank" class="projLink">
+                                        <span class="material-symbols-outlined">code</span> Github
+                                    </a>
                                 </div>
                             </div>
                         </div>
 
-                        <div class="projectWrapper hiddenProject">
-                            <img src="Assets/Images/temp.png">
+                        <div class="projectWrapper">
                             <div class="projectDetails">
                                 <div class="projTitle">
-                                    <h2>5</h2>
+                                    <h2>Secret Santa</h2>
                                 </div>
                                 <div class="projDesc">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent at ullamcorper dolor. Sed sed sapien eu mi consequat condimentum vitae ut justo. Nullam purus ipsum, sodales quis efficitur viverra, tempus quis ipsum. In varius, augue vitae consequat finibus, dui lacus euismod felis, eget sollicitudin elit turpis non nunc.</p>
+                                    <p>Web application with flask that allows users to create and manage secret santa
+                                        pairs</p>
+                                </div>
+                                <div class="projTags">
+                                    <span>Python</span>
+                                    <span>Flask</span>
+                                    <span>Javascript</span>
+                                </div>
+                                <div class="projLinks">
+                                    <a href="https://github.com/gieonneSabijon/Secret-Santa" target="_blank"
+                                        class="projLink">
+                                        <span class="material-symbols-outlined">code</span> Github
+                                    </a>
                                 </div>
                             </div>
                         </div>
+
+                        <div class="projectWrapper">
+                            <div class="projectDetails">
+                                <div class="projTitle">
+                                    <h2>TutorSeed</h2>
+                                </div>
+                                <div class="projDesc">
+                                    <p>Online tutor that utilizes Gemini AI to help students learn and
+                                        practice their skills at various subjects.</p>
+                                </div>
+                                <div class="projTags">
+                                    <span>Next.js</span>
+                                    <span>Python</span>
+                                    <span>Gemini AI</span>
+                                </div>
+                                <div class="projLinks">
+                                    <a href="https://github.com/gieonneSabijon" target="_blank" class="projLink">
+                                        <span class="material-symbols-outlined">code</span> Github
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
+
                     <div class="nextWrapper">
-                        <button class="carouselButton nextButton" onclick="projectCycle('right')">
-                            <span class="material-symbols-outlined nextProject">
+                        <button class="carouselButton nextButton" onclick="moveCarousel(1)" aria-label="Next Project">
+                            <span class="material-symbols-outlined">
                                 navigate_next
-                                </span>
+                            </span>
                         </button>
                     </div>
                 </div>
-                
-            </div>
 
-            <div class="Socials contentSection" id="Socials">
-                <div class="socialsTitle">
-                    <h1>Social</h1>
+                <div id="carouselDots" class="carousel-dots"></div>
+            </section>
+
+            <section class="Socials contentSection" id="Socials">
+                <div class="socialsHeading">
+                    <h1>Let's <span>Connect</span></h1>
                 </div>
+
                 <div class="socialList">
-                    <a class="linkedinLink socialButton" href="https://www.linkedin.com/in/gieonne-sabijon-b31411223/"><span class="material-symbols-outlined socialIcon">
-                        work
-                        </span>
-                    <p class="linkedinTitle linktitle">LinkedIn</p></a>
+                    <a class="socialButton" href="https://www.linkedin.com/in/gieonne-sabijon-b31411223/"
+                        target="_blank" rel="noopener noreferrer">
+                        <span class="material-symbols-outlined socialIcon">work</span>
+                        <span class="linktitle">LinkedIn</span>
+                    </a>
 
-                        <a class="githubLink socialButton" href="https://github.com/gieonneSabijon"><span class="material-symbols-outlined socialIcon">
-                            code
-                            </span><p class="githubTitle linktitle">Github</p></a>
+                    <a class="socialButton" href="https://github.com/gieonneSabijon" target="_blank"
+                        rel="noopener noreferrer">
+                        <span class="material-symbols-outlined socialIcon">code</span>
+                        <span class="linktitle">GitHub</span>
+                    </a>
 
-                        <a class="emailLink socialButton" href="mailto:gieonnesabijon@gmail.com"><span class="material-symbols-outlined socialIcon">
-                            mail
-                            </span><p class="emailTitle linktitle">Email</p></a>
+                    <a class="socialButton" href="mailto:gieonnesabijon@gmail.com">
+                        <span class="material-symbols-outlined socialIcon">mail</span>
+                        <span class="linktitle">Email</span>
+                    </a>
 
-                        <a class="resumeLink socialButton" href="https://github.com/gieonneSabijon/cv/blob/f793da2b2f8c63ba958cbbfcc081f43e0f89f64d/resume.pdf"><span class="material-symbols-outlined socialIcon">
-                            description
-                            </span><p class="resumeTitle linktitle">Resume</p></a>
+                    <a class="socialButton"
+                        href="https://github.com/gieonneSabijon/cv/blob/f793da2b2f8c63ba958cbbfcc081f43e0f89f64d/resume.pdf"
+                        target="_blank" rel="noopener noreferrer">
+                        <span class="material-symbols-outlined socialIcon">description</span>
+                        <span class="linktitle">Resume</span>
+                    </a>
                 </div>
-                <div class="socialsTitle2">
-                    <h1>Connections</h1>
-                </div>
-            
-            </div>
-        </div>
-            
+            </section>
+        </main>
+
+        <footer class="footer">
+            <p>&copy; 2026 Gieonne Sabijon.</p>
+        </footer>
+
     </div>
-    
 
 </body>
 
